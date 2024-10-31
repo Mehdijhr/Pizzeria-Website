@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            margin: 0px;
+            background-image: url(/webdesignassignment/images/background.jpg);
+        }
+        header {
+            background-color: #000000;
+            color: #fff;
+            padding: 20px;
+            text-align: right;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        p {
+            font-family: Lucida Handwriting, Cursive;
+            text-align: left;
+            text-decoration: none;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #010101;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #000000;
+        }
+        .login-container {
+            width: 300px;
+            margin: 100px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<header>
+    <p>DELICIOUS PIZZA</p>
+</header>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+            <div class="input-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+            <div class="input-group">
+                <label for="hashed_password">Password</label>
+                <input type="hashed_password" id="hashed_password" name="hashed_password" >
+                <button type="button" id="togglePassword">Show Password</button><br><br>
+                <input type="submit" value="Login">
+            </form>
+        
+            <script>
+                document.getElementById('togglePassword').addEventListener('click', function () {
+                    var passwordField = document.getElementById('hashed_password');
+                    var passwordFieldType = passwordField.getAttribute('type');
+                    if (passwordFieldType === 'hashed_password') {
+                        passwordField.setAttribute('type', 'text');
+                        this.textContent = 'Hide Password';
+                    } else {
+                        passwordField.setAttribute('type', 'hashed_password');
+                        this.textContent = 'Show hpassword';
+                    }
+                });
+            </script>
+</body>
+</html>
