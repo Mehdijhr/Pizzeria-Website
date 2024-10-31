@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Menu</title>
+    <style>
+        body { 
+            margin: 0px;
+        }
+        header form {
+    display: flex;
+    align-items: center;
+}
+
+header input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+header button {
+    padding: 8px 15px;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+header button:hover {
+    background-color: #f0f0f0;
+}
+
+    header {
+        background-color: #000000;
+         color: #fff;
+        padding: 20px;
+        text-align: right;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        }
+        p {
+
+        font-family: Lucida Handwriting,Cursive;
+        text-align: left;
+        text-decoration: none;
+        color: white;
+        margin: 0; 
+        padding: 0; 
+}
+body { 
+        background-image: url(/webdesignassignment/images/background.jpg);
+    }            
+        main {
+            margin: 20px;
+        }
+        
+        section {
+    background-color: #dddddd;
+    border-radius: 5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    margin-bottom: 20px;
+    padding: 20px;
+    
+}
+        
+        h2 {
+            color: #333;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        .margharita {
+    font-family: Lucida Handwriting, Cursive;
+    background-image: url("/webdesignassignment/images/margharita.jpg");
+    text-align: center;
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    align-items: center;
+}
+        .Diavola {
+    font-family: Lucida Handwriting, Cursive;
+    background-image: url("/webdesignassignment/images/diavola.jpeg");
+    text-align: center;
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    align-items: center;
+}
+        .Napoli {
+    font-family: Lucida Handwriting, Cursive;
+    background-image: url("/webdesignassignment/images/napoli.jpeg");
+    text-align: center;
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    align-items: center;
+}
+.Americana {
+    font-family: Lucida Handwriting, Cursive;
+    background-image: url("/webdesignassignment/images/americana.jpeg");
+    text-align: center;
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    align-items: center;
+}
+.Giala {
+    font-family: Lucida Handwriting, Cursive;
+    background-image: url("/webdesignassignment/images/giala.jpeg");
+    text-align: center;
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    align-items: center;
+}
+.Bolognese {
+    font-family: Lucida Handwriting, Cursive;
+    background-image: url("/webdesignassignment/images/bolognese.jpeg");
+    text-align: center;
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    align-items: center;
+}
+.Ligure {
+    font-family: Lucida Handwriting, Cursive;
+    background-image: url("/webdesignassignment/images/ligure.jpeg");
+    text-align: center;
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    align-items: center;
+}
+.Penne {
+    font-family: Lucida Handwriting, Cursive;
+    background-image: url("/webdesignassignment/images/penne.jpeg");
+    text-align: center;
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    align-items: center;
+}
+.riso {
+    font-family: Lucida Handwriting, Cursive;
+    background-image: url("/webdesignassignment/images/sero.jpeg");
+    text-align: center;
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    align-items: center;
+}
+.section1 {
+    width: 200px; 
+    margin: 0 auto; 
+    padding: 10px; 
+    background-color: #000000; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    
+}
+.section2 {
+    width: 200px; 
+    margin: 0 auto; 
+    padding: 10px; 
+    background-color: #000000; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    
+}
+.section3 {
+    width: 200px; 
+    margin: 0 auto; 
+    padding: 10px; 
+    background-color: #000000; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    
+}
+.section4 {
+    width: 200px; 
+    margin: 0 auto;
+    padding: 10px; 
+    background-color: #000000; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    
+}
+.section5 {
+    width: 200px; 
+    margin: 0 auto; 
+    padding: 10px; 
+    background-color: #000000; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    
+}
+.section6 {
+    width: 200px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 10px; /* Add padding for spacing */
+    background-color: #000000; /* Optional: Add background color */
+    border-radius: 8px; /* Optional: Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for depth */
+    text-align: center; /* Center text horizontally */
+    
+}
+.section7 {
+    width: 200px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 10px; /* Add padding for spacing */
+    background-color: #000000; /* Optional: Add background color */
+    border-radius: 8px; /* Optional: Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for depth */
+    text-align: center; /* Center text horizontally */
+    
+}
+.section8 {
+    width: 200px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 10px; /* Add padding for spacing */
+    background-color: #000000; /* Optional: Add background color */
+    border-radius: 8px; /* Optional: Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for depth */
+    text-align: center; /* Center text horizontally */
+    
+}
+.section9 {
+    width: 200px; 
+    margin: 0 auto; 
+    padding: 10px; 
+    background-color: #000000; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    
+}
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+
+<body>
+    <header>
+        <p> DELICIOUS PIZZA </p>
+        <form action="search.php" method="GET" style="margin-left: auto;">
+            <input type="text" name="query" placeholder="Search menu items..." required>
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    <main>
+        <section>
+            <h2>Pizzas</h2>
+            <section class="margharita">
+                <section class="section1">
+                Margharita
+            <br> Mozarella and tomato  </br>
+        </section>
+         
+        </section>
+        <section class="Diavola">
+            <section class="section2">
+                Diavola
+            <br>Mozzarella, Tomato & Pepperoni</br>
+            
+        </section>
+    </section>
+    <section class="Napoli">
+        <section class="section3">
+            Napoli
+        <br>Mozzarella, Tomato, Anchovies, Olives & Capers</br>
+        
+    </section>
+</section>
+
+<section class="Americana">
+    <section class="section4">
+        Americana
+    <br>Mozzarella, Tomato, Pepperoni, Peppers & Chilli</br>
+    
+</section>
+</section>
+        
+<section class="Giala">
+    <section class="section5">
+        Pinna-Gialla 
+    <br>Tomato, Mozzarella, Tuna, Sweetcorn & Onions</br>
+    
+</section>
+</section>
+
+
+
+
+
+
+<section>
+    <h2>Pasta</h2>
+    <section class="Bolognese">
+        <section class="section6">
+        Spaghetti ala Bolognese
+    <br> With traditional Italian Meat sauce  </br>
+</section>
+ </section>
+
+<section class="Ligure">
+<section class="section7">
+    Spaghetti alla Ligure
+<br>With Pesto, Chicken & Cherry Tomatoes</br>
+
+</section>
+</section>
+
+<section class="Penne">
+<section class="section8">
+    Penne Rustiche
+<br>With Cream, Nutmeg, Italian Sausage & Mushrooms</br>
+
+</section>
+</section>
+
+<section class="riso">
+<section class="section9">
+    Risotto Adriatico
+<br>With fresh Seafood</br>
+
+</section>
+
+</section>
+<script>
+    // Function to toggle visibility of menu sections
+    function toggleSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        if (section.style.display === "none") {
+            section.style.display = "block";
+        } else {
+            section.style.display = "none";
+        }
+    }
+
+    // Function to filter menu items
+    function filterMenuItems() {
+        var input = document.getElementById('searchBox');
+        var filter = input.value.toUpperCase();
+        var sections = document.querySelectorAll('section.section');
+        sections.forEach(function(section) {
+            var title = section.querySelector('h3');
+            if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+                section.style.display = "";
+            } else {
+                section.style.display = "none";
+            }
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('searchBox').addEventListener('keyup', filterMenuItems);
+    });
+</script>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Delicious Pizzeria</p>
+    </footer>
+</body>
+</html>
