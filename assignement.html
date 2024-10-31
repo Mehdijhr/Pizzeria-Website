@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delicious Pizza</title>
+    <style>
+        body { 
+            margin: 0px;
+        }
+        header {
+            background-color: #000000;
+            color: #fff;
+            padding: 20px;
+            text-align: right;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+        }
+     
+       
+        div { 
+            font-family: Georgia,serif;
+            margin:0;
+            padding: 2px;
+            text-align:right;
+            ;
+        }
+        .auth-buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #000000;
+            padding: 10px 15px;
+            margin-left: 10px;
+            border-radius: 5px;
+        }
+        .order {
+            background-color: #000000; 
+            color: #fff; 
+            padding: 15px 25px; 
+            border-radius: 40px;
+            border: 2px solid #ccc6bd; 
+            font-weight: bold;
+            text-align: right;
+            cursor: pointer;
+        
+       }
+       p {
+
+            font-family: Lucida Handwriting,Cursive;
+            text-align: left;
+            text-decoration: none;
+            color: white;
+            margin: 0; 
+            padding: 0; 
+       }
+       main { 
+        text-align: left;
+       background-image: url();
+            
+       }
+       h1{
+        text-align: center;
+        }  
+        table {
+            width: 100%;
+            border-collapse:separate;
+            margin-top: 20px; 
+            background-color: #ffffff;
+        }
+        th, td {
+            border: 2px;
+            padding: 20px;
+        }
+        th {
+            background-color: #000000;
+            color: #fff;
+        }
+        .select-button {
+            background-color: #080b08;
+            color: white;
+            text-align: center;
+            text-decoration:solid;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .aboutus-container {
+        width: 400px;
+        margin: 100px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        body {
+            background-image: url("images/background.jpg");
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <p> DELICIOUS PIZZA </p>
+        <div class="auth-buttons">
+            <a href="menu.html">Menu</a>
+            <a href="/shops">shops</a>
+            <a href="/information">Informations</a>
+            <a href="/contact">Contact</a>
+        </div>
+            <a href="order.html" class="order">ORDER NOW</a>
+        </header>
+        
+        <div class=" aboutus-container">
+            <h1>About Delicious Pizza </h1>
+            <br>Welcome to Delicious Pizza, your ultimate destination for mouthwatering pizza in the heart of London. Established with a passion for crafting authentic Italian-style pizzas, we take pride in serving up slices of perfection that tantalize your taste buds and leave you craving for more</br>
+            <br>At Delicious Pizza, we believe in the art of pizza-making. Our skilled chefs handcraft each pizza with the finest ingredients, from our homemade dough to our signature tomato sauce, and top-quality cheeses and toppings. Every bite bursts with flavor and freshness, delivering an unforgettable culinary experience that keeps our customers coming back for more.</br>
+            
+        </div>
+            <h1> Special offers </h1>
+            
+            <table>
+                <tr>
+                    <th>Offer</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Selection</th>
+                </tr>
+                <tr>
+                    <td><img src="/webdesignassignment/images/care.jpeg" width="200" height="100"></td>
+                    <td><h2> Care Package</h2> 2 Pizzas + Any 2 sides</td>
+                    <td>$19.99</td>
+                    <td><button  class="select-button">Select</button></td>
+                    
+                </tr>
+                <tr>
+                    <td><img src="/webdesignassignment/images/2'S.jpg" width="200" height="100"></td>
+                    <td>Choose any two pizzas! Get a nice discount</td>
+                    <td>$8.99</td>
+                    <td><button class="select-button">Select</button></td>
+                </tr>
+                <tr>
+                    <td><img src="/webdesignassignment/images/single.jpg" width="200" height="100"></td>
+                    <td>Any pizza, any starter or side, 2dips and 2 drinks</td>
+                    <td>$29.99</td>
+                    <td><button  class="select-button">Select</button></td>
+                </tr>
+                <tr>
+                    <td><img src="/webdesignassignment/images/triple.jpg" width="200" height="100"></td>
+                    <td>Any 3 medium pizzas, any 3 sides and 3 drinks</td>
+                    <td>$29.99</td>
+                    <td><button class="select-button">Select</button></td>
+                </tr>
+            </table>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Delicious Pizzeria</p>
+    </footer>
+        
+</body>
