@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Now - Delicious Pizza</title>
+    <style>
+        body { 
+            margin: 0px;
+        }
+         header {
+            background-color: #000000;
+            color: #fff;
+            padding: 20px;
+            text-align: right;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+        }
+        fieldset {
+    border: 1px solid #ccc; 
+    background-color: #fff;
+    padding: 20px; 
+    text-align: center; 
+    margin: auto; 
+    display: block; 
+}
+
+.wst {
+    font-size: 16px; /* Set the size of the text as needed */
+    color: #333; /* Optional: Ensures text is visible against a light background */
+    margin-bottom: 20px; 
+}
+.order-button {
+    padding: 10px 20px;
+    background-color: #000000; /* A green color for the button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Makes the button text larger and more clickable */
+    outline: none; /* Removes the outline to keep the focus style clean */
+}
+
+.order-button:hover {
+    background-color: #005700; /* Darker green on hover for interactive effect */
+}
+
+       
+        div { 
+            font-family: Georgia,serif;
+            margin:0;
+            padding: 2px;
+            text-align:right;
+        }
+        .Order-auth a { 
+            text-decoration: none;
+            color: white;
+            background-color: #000000;
+            padding: 10px 15px;
+            margin-left: 10px;
+            border-radius: 5px;
+
+        }
+        
+        h1{
+        text-align: center;
+        font-family: Lucida Handwriting,Cursive;
+        text-shadow: 2px 2px 4px #000000; /* Optional: adds a shadow for a 3D effect */
+        } 
+      
+        p {
+            font-family: Lucida Handwriting,Cursive;
+            text-align: left;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            margin: 0; 
+            padding: 0; 
+       }
+       .wst { 
+        color: rgb(0, 0, 0);
+        text-align: center;
+       }
+     body { 
+        background-image: url(/webdesignassignment/images/background.jpg);
+     }
+     footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p> DELICIOUS PIZZA </p>
+        <div class="Order-auth">
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </div>
+    </header>
+    <main>
+        <h1 id="dynamic-greeting">Ready to Order?</h1>
+        <fieldset> 
+            <p class="wst">Explore our wide range of pizzas and select your favorites. Click below to see the menu!</p>
+            <button class="order-button" onclick="location.href='menu.html'">See the menu</button>
+        </fieldset>
+        <div id="live-clock" style="text-align: center; font-size: 20px; margin-top: 20px;"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Delicious Pizzeria. All Rights Reserved.</p>
+    </footer>
+    <script>
+    
+        function setDynamicGreeting() {
+            var now = new Date();
+            var hours = now.getHours();
+            var greeting = "Welcome!";
+            if (hours < 12) {
+                greeting = "Good Morning! Ready to order?";
+            } else if (hours < 18) {
+                greeting = "Good Afternoon! Ready to order?";
+            } else {
+                greeting = "Good Evening! Ready to order?";
+            }
+            document.getElementById('dynamic-greeting').textContent = greeting;
+        }
+
+        // Set initial time and greeting
+        setDynamicGreeting();
+        updateClock();
+        // Update the clock every 60 seconds
+        setInterval(updateClock, 60000);
+    </script>
+</body>
+</html>
